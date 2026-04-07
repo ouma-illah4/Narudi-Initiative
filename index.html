@@ -19,7 +19,9 @@
       </a>
 
       <button id="navToggle" class="nav-toggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Open menu">
-        <span class="hamburger"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
       </button>
 
       <nav id="primaryNav" class="main-nav" role="navigation" aria-label="Primary">
@@ -70,10 +72,14 @@
   </div>
 </footer>
 <script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("service-worker.js")
-    .then(() => console.log("Service Worker Registered"));
-}
+const navToggle = document.getElementById('navToggle');
+const primaryNav = document.getElementById('primaryNav');
+
+navToggle.addEventListener('click', () => {
+  const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+  navToggle.setAttribute('aria-expanded', !isExpanded);
+  primaryNav.classList.toggle('show');
+});
 </script>
 
 
