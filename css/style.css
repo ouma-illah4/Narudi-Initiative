@@ -388,7 +388,7 @@ form textarea:focus {
   }
 
   .nav-toggle {
-    display: flex; /* show hamburger button */
+    display: none; 
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
@@ -567,4 +567,18 @@ form textarea:focus {
   display: inline-block;
   margin-top: 30px;
   text-decoration: none;
+}
+.back-home {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 8px 12px;
+  background-color: #0b6efd;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.back-home:hover {
+  background-color: #074bb5;
 }
