@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b6efd">
+  <title>About — Narudi Initiative</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <!-- ===== Header / Navigation ===== -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Narudi Initiative home">
+        <img src="images/LOGO.jpg" alt="Narudi Initiative Logo" height="48">
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Open menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      <nav id="primaryNav" class="main-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="programs.html">What We Do</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main class="page-content container">
+    <h1>About Narudi Initiative</h1>
+
+    <!-- Introduction -->
+    <section class="introduction">
+      <p><strong>NARUDI INITIATIVE COMMUNITY BASED ORGANISATION (CBO)</strong> is a Christian-based organization located in Makadara Sub-County, Nairobi. We voluntarily work to bring positive change to the community, focusing on health, education, and sustainable development.</p>
+      <p>Contact us: P.O. BOX 17056-00510, Nairobi | Tel: 0719530016 | Email: <a href="mailto:narudiinitiative@gmail.com">narudiinitiative@gmail.com</a></p>
+    </section>
+
+    <!-- Mission & Vision (unchanged) -->
+    <section class="mission">
+      <h2>Our Mission</h2>
+      <p>To become a beacon of hope bringing transformation to the community.</p>
+    </section>
+
+    <section class="vision">
+      <h2>Our Vision</h2>
+      <p>To be vessels that bring light to the life of individuals in the community, whose souls are shadowed by social injustice, substance abuse, and broken families. We give each a chance to grow and become destiny changers to others.</p>
+    </section>
+
+    <!-- Objectives -->
+    <section class="objectives">
+      <h2>Our Objectives</h2>
+      <ul>
+        <li>Defend human rights and raise awareness through civic education.</li>
+        <li>Enhance public participation in decision-making and resource management.</li>
+        <li>Uplift livelihoods through financial literacy programs.</li>
+        <li>Tackle economic disparities and poverty to address root causes of unrest.</li>
+        <li>Build resilience and adaptation to the effects of climate change.</li>
+        <li>Raise mental health awareness in schools and communities.</li>
+      </ul>
+    </section>
+
+    <!-- Membership -->
+    <section class="membership">
+      <h2>Membership</h2>
+      <p>Members must be 18 years or older, of sound mind, and willing to abide by the CBO rules and regulations. A non-refundable registration fee is required. Members have rights, privileges, and obligations as outlined in the constitution.</p>
+    </section>
+
+    <!-- Funding & Use of Funds -->
+    <section class="funding">
+      <h2>Funding & Use of Funds</h2>
+      <p>Our CBO is funded through registration fees, donations, fundraisers, investments, and contributions from well-wishers. All funds are used for programs and initiatives approved by the Executive Committee and members.</p>
+    </section>
+
+    <!-- Leadership  -->
+    <section class="team container">
+      <h2>Leadership</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="images/Founder & Director.jpg" alt="Founder" loading="lazy">
+          <h3>HUMPHRENCE AMBANI</h3>
+          <p>Founder & Director</p>
+        </div>
+        <div class="team-member">
+          <img src="images/Co-Founder.jpg" alt="Co-Founder">
+          <h3>HEMPSTONE ILLA</h3>
+          <p>Co-Founder</p>
+        </div>
+        <div class="team-member">
+          <img src="images/Executive Director.jpg" alt="CEO">
+          <h3>JUDY NDEGE</h3>
+          <p>Executive Director / CEO</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Narudi Initiative. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js")
+     .then(() => console.log("Service Worker Registered"));
+  }
+  </script>
+
+</body>
+</html>
+

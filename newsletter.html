@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Newsletter — Narudi Initiative</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0b6efd">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Narudi Initiative home">
+        <img src="images/LOGO.jpg" alt="Narudi Initiative Logo" height="48">
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Open menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      <nav id="primaryNav" class="main-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">What We Do</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="newsletter.html" class="active">Newsletter</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main class="page-content container" style="padding-top:100px;">
+    <h1>Subscribe to Our Newsletter</h1>
+    <p>Stay updated with our latest programs, stories, and events. Enter your email below.</p>
+
+    <form id="newsletterForm">
+  <label for="name">Full Name</label>
+  <input type="text" id="name" placeholder="Your Name" required>
+
+  <label for="email">Email Address</label>
+  <input type="email" id="email" placeholder="you@example.com" required>
+
+  <button type="submit" class="btn primary">Subscribe</button>
+</form>
+
+<!-- Confirmation message -->
+<p id="confirmationMessage" style="display:none; color:green; margin-top:1em;">
+  🎉 Thank you for subscribing! You’ll receive updates soon.
+</p>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Narudi Initiative. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/newsletter.js"></script>
+  <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js")
+     .then(() => console.log("Service Worker Registered"));
+  }
+  </script>
+
+</body>
+</html>
+

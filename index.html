@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b6efd">
+  <title>Narudi Initiative</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <!-- ===== Header / Navigation ===== -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Narudi Initiative home">
+        <img src="images/LOGO.jpg" alt="Narudi Initiative Logo" height="48">
+      </a>
+
+      <button id="navToggle" class="nav-toggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Open menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="primaryNav" class="main-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">What We Do</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="home">
+
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="videos/hero.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay">
+    <div class="hero-content container">
+      <h1>Narudi Initiative</h1>
+      <p class="motto">“A beacon of Hope, Transforming the community”</p>
+      <p class="vision">
+        To be vessels that bring light and hope into the lives of individuals in our community,
+        whose souls are shadowed by darkness guiding them toward renewal, purpose, and transformation.
+      </p>
+      <a href="donate.html" class="btn primary">Donate Now</a>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 Narudi Initiative. All rights reserved.</p>
+
+    <div class="social-links">
+      <a href="https://facebook.com" class="facebook" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" class="twitter" aria-label="X" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    </div>
+
+  </div>
+</footer>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js")
+    .then(() => console.log("Service Worker Registered"));
+}
+</script>
+
+
+
+  </body>
+  </html>
+
+

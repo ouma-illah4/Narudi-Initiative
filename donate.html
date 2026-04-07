@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b6efd">
+  <title>Donate — Narudi Initiative</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Narudi Initiative home">
+        <img src="images/LOGO.jpg" alt="Narudi Initiative Logo" height="48" loading="lazy">
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Open menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      <nav id="primaryNav" class="main-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">What We Do</a></li>
+          <li><a href="donate.html" class="active">Donate</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main class="page-content container" style="padding-top:100px;">
+    <h1>Support Our Cause</h1>
+    <p>Your contribution helps us reach orphans, the sick, and the needy. Every donation counts.</p>
+
+    <!-- Transparency -->
+    <section class="transparency">
+      <h2>Transparency & Accountability</h2>
+      <p>At Narudi Initiative, every shilling is tracked and used responsibly. Donations fund our programs for orphans, healthcare support, addiction recovery, and community upliftment. Annual financial reports are available to all supporters.</p>
+    </section>
+
+    <!-- Donate Options -->
+    <section class="donate-options">
+      <div class="program-card">
+        <i class="fa-solid fa-hand-holding-dollar donate-icon"></i>
+        <h2>One-time Donation</h2>
+        <p>Give a single donation to support our programs immediately.</p>
+        <button class="btn primary" data-modal="donateModal">Donate Now</button>
+      </div>
+
+      <div class="program-card">
+        <i class="fa-solid fa-repeat donate-icon"></i>
+        <h2>Monthly Support</h2>
+        <p>Become a recurring donor and make a lasting impact every month.</p>
+        <button class="btn primary" data-modal="donateModal">Start Giving</button>
+      </div>
+
+      <div class="program-card">
+        <i class="fa-solid fa-gift donate-icon"></i>
+        <h2>In-kind Donations</h2>
+        <p>Donate goods, food, or supplies to support those in need.</p>
+        <button class="btn primary" data-modal="donateModal">Learn More</button>
+      </div>
+    </section>
+
+    <!-- Donate Modal -->
+    <div id="donateModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Make a Donation</h2>
+        <p>Choose your preferred payment method and complete your donation.</p>
+
+        <form id="donationForm">
+          <label for="paymentMethod">Select Payment Method:</label>
+          <select id="paymentMethod" required>
+            <option value="">--Choose an option--</option>
+            <option value="mpesa">M-PESA</option>
+            <option value="card">Credit/Debit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="bank">Bank Transfer</option>
+          </select>
+
+          <label for="amount">Donation Amount (Ksh):</label>
+          <input type="number" id="amount" placeholder="Enter amount" required>
+
+          <div id="paymentDetails" style="margin-top:10px;"></div>
+
+          <button type="submit" class="btn primary">Donate Now</button>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Narudi Initiative. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/donate.js"></script>
+</body>
+</html>
+
+
+
