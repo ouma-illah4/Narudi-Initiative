@@ -4,163 +4,183 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Programs — Narudi Initiative</title>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#0b6efd">
 </head>
+
 <body>
 
-  <!-- ===== Header / Navigation ===== -->
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="container header-inner">
 
-      <!-- Logo -->
-      <a href="index.html" class="logo" aria-label="Narudi Initiative home">
-        <img src="images/LOGO.jpg" alt="Narudi Initiative Logo" height="48">
-      </a>
+    <a href="index.html" class="logo">
+      <img src="images/LOGO.jpg" alt="Narudi Initiative Logo" height="48">
+    </a>
 
-      <!-- Hamburger button -->
-      <button id="navToggle" class="nav-toggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Open menu">
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
-      </button>
+    <button id="navToggle" class="nav-toggle" aria-label="menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
 
-      <!-- Navigation -->
-      <nav id="primaryNav" class="main-nav" role="navigation" aria-label="Primary">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="programs.html" class="active">What We Do</a></li>
-          <li><a href="donate.html">Donate</a></li>
-          <li><a href="newsletter.html">Newsletter</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <nav id="primaryNav" class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a class="active" href="programs.html">Programs</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-    </div>
-  </header>
-
-  <!-- ===== Main Content ===== -->
-  <main class="page-content container">
-    <h1>Our Programs</h1>
-    <p>At Narudi Initiative, we focus on programs that uplift the most vulnerable members of our community.</p>
-
-    <!-- ===== Programs Grid ===== -->
-<section class="programs-grid">
-
-  <!-- Support Orphans -->
-  <div class="program-card">
-    <i class="fas fa-child program-icon orphans" title="Support Orphans"></i>
-    <h2>Support Orphans</h2>
-    <p>Providing shelter, education, and care for orphaned children.</p>
-    <div class="extra-details" style="display:none;">
-      <p>We provide shelter, mentorship, school fees, and emotional support to orphaned children, ensuring they have the tools to grow and thrive in society.</p>
-    </div>
-    <a href="orphans.html" class="learn-more-btn">Learn More</a>
   </div>
+</header>
 
-  <!-- Healthcare Assistance -->
-  <div class="program-card">
-    <i class="fas fa-hospital program-icon healthcare" title="Healthcare Assistance"></i>
-    <h2>Healthcare Assistance</h2>
-    <p>Medical support and health services for the sick and needy.</p>
-    <div class="extra-details" style="display:none;">
-      <p>Providing free medical checkups, vaccinations, health education, and emergency assistance to those in need.</p>
+<!-- ===== PAGE CONTENT ===== -->
+<main class="page-content container">
+
+  <h1>Our Programs</h1>
+
+  <p>
+    We focus on transforming lives through structured programs that begin with mental wellbeing
+    and extend into community restoration and long-term development.
+  </p>
+
+  <!-- ===== PROGRAMS GRID ===== -->
+  <section class="programs-grid">
+
+    <!-- 1. Mental Health -->
+    <div class="program-card core">
+      <i class="fas fa-brain program-icon mental"></i>
+      <h2>Mental Health Awareness</h2>
+      <p>
+        Raising awareness on depression, anxiety, trauma, and emotional wellbeing in schools and communities.
+      </p>
+      <div class="extra-details">
+        <p>
+          We create safe spaces for conversation, education, and early intervention for mental health challenges.
+        </p>
+      </div>
+      <a href="mental.html" class="learn-more-btn">Learn More</a>
     </div>
-    <a href="healthcare.html" class="learn-more-btn">Learn More</a>
+
+    <!-- 2. Addiction Recovery -->
+    <div class="program-card core">
+      <i class="fas fa-heartbeat program-icon addiction"></i>
+      <h2>Addiction Recovery</h2>
+      <p>
+        Supporting individuals struggling with drug and substance abuse to rebuild their lives.
+      </p>
+      <div class="extra-details">
+        <p>
+          We provide counseling, mentorship, rehabilitation pathways, and community reintegration support.
+        </p>
+      </div>
+      <a href="addiction.html" class="learn-more-btn">Learn More</a>
+    </div>
+
+    <!-- 3. Support the Needy -->
+    <div class="program-card">
+      <i class="fas fa-hand-holding-heart program-icon needy"></i>
+      <h2>Support the Needy</h2>
+      <p>
+        Providing food, clothing, and basic essentials to vulnerable families.
+      </p>
+      <div class="extra-details">
+        <p>
+          Emergency relief support helps families regain dignity and stability during hardship.
+        </p>
+      </div>
+      <a href="needy.html" class="learn-more-btn">Learn More</a>
+    </div>
+
+    <!-- 4. Healthcare -->
+    <div class="program-card">
+      <i class="fas fa-hospital program-icon healthcare"></i>
+      <h2>Healthcare Assistance</h2>
+      <p>
+        Supporting access to medical care and health awareness programs.
+      </p>
+      <div class="extra-details">
+        <p>
+          We help with health education, medical outreach, and emergency assistance where needed.
+        </p>
+      </div>
+      <a href="healthcare.html" class="learn-more-btn">Learn More</a>
+    </div>
+
+    <!-- 5. Orphans -->
+    <div class="program-card">
+      <i class="fas fa-child program-icon orphans"></i>
+      <h2>Support Orphans</h2>
+      <p>
+        Education support, mentorship, and care for orphaned children.
+      </p>
+      <div class="extra-details">
+        <p>
+          We ensure orphaned children receive emotional support, schooling, and life guidance.
+        </p>
+      </div>
+      <a href="orphans.html" class="learn-more-btn">Learn More</a>
+    </div>
+
+    <!-- 6. Financial Literacy -->
+    <div class="program-card">
+      <i class="fas fa-money-bill-wave program-icon finance"></i>
+      <h2>Financial Literacy</h2>
+      <p>
+        Teaching budgeting, saving, and entrepreneurship skills.
+      </p>
+      <a href="financial.html" class="learn-more-btn">Learn More</a>
+    </div>
+
+    <!-- 7. Civic Education -->
+    <div class="program-card">
+      <i class="fas fa-balance-scale program-icon civic"></i>
+      <h2>Civic Education</h2>
+      <p>
+        Empowering communities with knowledge of rights and governance.
+      </p>
+      <a href="civic.html" class="learn-more-btn">Learn More</a>
+    </div>
+
+    <!-- 8. Climate -->
+    <div class="program-card">
+      <i class="fas fa-leaf program-icon climate"></i>
+      <h2>Climate & Environment</h2>
+      <p>
+        Promoting sustainability and environmental resilience.
+      </p>
+      <a href="climate.html" class="learn-more-btn">Learn More</a>
+    </div>
+
+  </section>
+
+  <a href="index.html" class="back-home">← Back to Home</a>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 Narudi Initiative. All rights reserved.</p>
   </div>
+</footer>
 
-  <!-- Support the Needy -->
-  <div class="program-card">
-    <i class="fas fa-hand-holding-heart program-icon needy" title="Support the Needy"></i>
-    <h2>Support the Needy</h2>
-    <p>Food, clothing, and essentials for families in need.</p>
-    <div class="extra-details" style="display:none;">
-      <p>Emergency food, clothing, and basic necessities are provided to vulnerable families, helping them regain stability and dignity.</p>
-    </div>
-    <a href="needy.html" class="learn-more-btn">Learn More</a>
-  </div>
+<!-- ===== SCRIPT ===== -->
+<script>
+const navToggle = document.getElementById('navToggle');
+const primaryNav = document.getElementById('primaryNav');
 
-  <!-- Addiction Recovery -->
-  <div class="program-card">
-    <i class="fas fa-heartbeat program-icon addiction" title="Addiction Recovery"></i>
-    <h2>Addiction Recovery</h2>
-    <p>Programs to help individuals overcome addiction and rebuild their lives.</p>
-    <div class="extra-details" style="display:none;">
-      <p>Counseling, rehabilitation, and mentorship programs guide individuals struggling with addiction toward a healthy and purposeful life.</p>
-    </div>
-    <a href="addiction.html" class="learn-more-btn">Learn More</a>
-  </div>
-
-  <!-- Civic Education -->
-  <div class="program-card">
-    <i class="fas fa-balance-scale program-icon civic" title="Civic Education"></i>
-    <h2>Civic Education</h2>
-    <p>Raising awareness about human rights and active participation.</p>
-    <div class="extra-details" style="display:none;">
-      <p>We educate communities on their rights, civic duties, and public participation to strengthen governance and social justice.</p>
-    </div>
-    <a href="civic.html" class="learn-more-btn">Learn More</a>
-  </div>
-
-  <!-- Climate & Environment -->
-  <div class="program-card">
-    <i class="fas fa-leaf program-icon climate" title="Climate & Environment"></i>
-    <h2>Climate & Environment</h2>
-    <p>Building resilience against climate change impacts.</p>
-    <div class="extra-details" style="display:none;">
-      <p>Programs focus on sustainable practices, tree planting, waste management, and climate change adaptation for communities.</p>
-    </div>
-    <a href="climate.html" class="learn-more-btn">Learn More</a>
-  </div>
-
-  <!-- Financial Literacy -->
-  <div class="program-card">
-    <i class="fas fa-money-bill-wave program-icon finance" title="Financial Literacy"></i>
-    <h2>Financial Literacy</h2>
-    <p>Helping communities manage resources effectively.</p>
-    <div class="extra-details" style="display:none;">
-      <p>Workshops and training sessions teach budgeting, saving, investments, and entrepreneurship to improve livelihoods.</p>
-    </div>
-    <a href="financial.html" class="learn-more-btn">Learn More</a>
-  </div>
-
-  <!-- Mental Health Awareness -->
-  <div class="program-card">
-    <i class="fas fa-brain program-icon mental" title="Mental Health Awareness"></i>
-    <h2>Mental Health Awareness</h2>
-    <p>Raising awareness on mental health challenges in schools and communities.</p>
-    <div class="extra-details" style="display:none;">
-      <p>We educate about depression, anxiety, abuse, and emotional well-being, offering counseling support and awareness programs in schools and community centers.</p>
-    </div>
-    <a href="mental.html" class="learn-more-btn">Learn More</a>
-  </div>
-
-</section>
-
-<a href="index.html" class="back-home">← Back to Home</a>
-    
-  </main>
-
-  <!-- ===== Footer ===== -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Narudi Initiative. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- JS for Hamburger Menu -->
-  <script src="js/main.js"></script>
-  <script src="js/programs.js"></script>
-  <script>
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("service-worker.js")
-      .then(() => console.log("Service Worker Registered"));
-  }
-  </script>
-
+navToggle.addEventListener('click', () => {
+  primaryNav.classList.toggle('show');
+});
+</script>
 
 </body>
 </html>

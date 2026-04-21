@@ -1,6 +1,11 @@
-/* =========================
-   RESET + GLOBAL
-========================= */
+:root {
+  --dark: #0b0f1a;
+  --soft-dark: #111827;
+  --accent: #7c3aed; /* emotional purple */
+  --light-accent: #38bdf8; /* hope/light */
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+}
 
 * {
   margin: 0;
@@ -14,15 +19,16 @@ html, body {
 
 body {
   font-family: "Segoe UI", Roboto, system-ui, Arial, sans-serif;
-  line-height: 1.5;
-  color: #222;
-  background: #fff;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--dark);
 }
 
 h1, h2, h3 {
   font-family: "Poppins", Arial, sans-serif;
   font-weight: 600;
-  color: #0b6efd;
+  color: var(--light-accent);
+  letter-spacing: 0.5px;
 }
 
 a {
@@ -136,29 +142,44 @@ a:hover {
 
 .hero-video {
   position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 0;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.55);
+  z-index: 1;
+  background: rgba(0,0,0,0.65); /* increase darkness */
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 .hero-content {
-  color: white;
-  max-width: 800px;
+  position: relative;
+  z-index: 2;
 }
 
 .hero h1 {
   font-size: clamp(2rem,4vw,3rem);
   margin-bottom: 10px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 40%,
+    rgba(56,189,248,0.08),
+    transparent 70%
+  );
+  pointer-events: none;
 }
 
 .motto {
@@ -182,12 +203,13 @@ a:hover {
 }
 
 .btn.primary {
-  background: linear-gradient(135deg,#0b6efd,#28a745);
-  color: #fff;
+  background: linear-gradient(135deg, var(--accent), var(--light-accent));
+  box-shadow: 0 0 20px rgba(124,58,237,0.3);
 }
 
 .btn.primary:hover {
-  background: linear-gradient(135deg,#084298,#1e7e34);
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(56,189,248,0.4);
 }
 
 /* =========================
@@ -218,8 +240,9 @@ a:hover {
 
 .program-card,
 .team-member {
-  background: #fff;
-  border-radius: 12px;
+  background: var(--soft-dark);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.05);
   text-align: center;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -337,8 +360,8 @@ form textarea:focus {
 ========================= */
 
 .site-footer {
-  background: gray;
-  color: white;
+  background: #0a0f1f;
+  color: var(--muted);
   text-align: center;
   padding: 25px 15px;
 }
@@ -403,7 +426,7 @@ form textarea:focus {
 .hamburger-line {
   width: 100%;
   height: 3px;
-  background-color: #fff; /* white lines for visibility */
+  background-color: var(--light-accent); 
   border-radius: 2px;
   display: block;
 }
@@ -559,17 +582,25 @@ form textarea:focus {
 }
 
 .stat-box {
+  background: #111827;
+  color: #e5e7eb;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   text-align: center;
+
+  border: 1px solid rgba(255,255,255,0.06);
+
   font-weight: 600;
-  background: #f9f9f9;
-  border: 1px solid #eee;
-  transition: transform 0.2s ease;
+  line-height: 1.5;
+
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .stat-box:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(56,189,248,0.15);
 }
 
 /* ===== LIST SPACING ===== */
@@ -624,3 +655,51 @@ form textarea:focus {
 .back-home:hover {
   background-color: #074bb5;
 }
+
+
+.objectives {
+  background: #111827;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.objectives h2 {
+  color: var(--light-accent);
+}
+
+.objectives ul li {
+  color: #e5e7eb;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.activity-box {
+  background: #111827;
+  padding: 22px;
+  border-radius: 12px;
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  margin-top: 15px;
+
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity-box ul {
+  padding-left: 18px;
+}
+
+.activity-box li {
+  color: #e5e7eb;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.activity-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(56,189,248,0.12);
+}
+
